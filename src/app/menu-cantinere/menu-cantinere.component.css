@@ -1,0 +1,54 @@
+.navv{
+    padding: 70px;
+    text-align: center
+}
+
+
+
+ .lien{
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    border: 2px solid;
+    
+}
+.btn a {
+    text-align: center;
+    padding: 12px;
+}
+.btn a:hover {
+    background-color: rgba(211, 40, 63, 1);
+    text-decoration: none;
+}
+
+
+.days a{
+    text-align: center;
+    padding: 10px 100px 10px 100px;
+ 
+ }
+ .add{
+    margin-left: 566px;
+    padding: 30px
+ }
+
+ .sel{
+    font-size: 2em;
+    color: black;
+    padding: 10px 100px 10px 100px;
+    border: 2px solid;  
+ }
+ .plat{
+    text-align: center;
+   
+ }
+ .valid{
+     text-align: center;
+     padding: 70px;
+ }
+ .valider{
+     background-color: rgba(211, 40, 63, 1);
+     padding: 10px 40px 10px 40px;
+     border-radius: 20px;
+     border: none;
+ }

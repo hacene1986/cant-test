@@ -1,0 +1,44 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <a href="/">
+    <img src="../assets/img/logo_cantiniere.png" width="200" height="75" class="header-link d-inline-block align-top">
+  </a>
+  <div class="navbar-nav ml-5">
+
+    <a class="header-link nav-item nav-link text-white mr-3 font-weight-normal" routerLink="/menu">
+      Menu
+    </a>
+    <a class="header-link nav-item nav-link text-white mr-3 font-weight-normal" routerLink="/plat">
+      Plats
+    </a>
+    <a class="header-link nav-item nav-link text-white mr-3 font-weight-normal" routerLink="/platCantiniere">
+      PlatsCantiniere
+    </a>
+    <a class="header-link nav-item nav-link text-white mr-3 font-weight-normal" routerLink="/menuCantiniere">
+      MenuCantiniere
+    </a>
+    <a class="header-link nav-item nav-link text-white font-weight-normal" routerLink="/contact">
+      Contact
+    </a>
+  </div>
+
+  <div class="navbar-nav ml-auto">
+    <button type="button" class="btn btn-dark btn-outline-light" (click)="openInscription()" *ngIf="!isAuth">Inscription</button>
+    <a class="nav-item nav-link" href="#"></a>
+    <button type="button" class="btn btn-dark btn-outline-light" (click)="openconnection()" *ngIf="!isAuth">Connexion</button>
+
+    <img *ngIf="isAuth" src="../../../assets/img/profil.png" alt="..." class="imgavatar">
+    <div class="nav-item dropdown" *ngIf="isAuth">
+
+      <a class="header-link-user nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{ userConnected.firstname }}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" routerLink="/profil">Mon Profil</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" (click)="deconnexion()">Deconnexion</a>
+      </div>
+    </div>
+  </div>
+</nav>
