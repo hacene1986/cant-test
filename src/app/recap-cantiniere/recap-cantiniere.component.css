@@ -75,6 +75,12 @@ li {
 }
 
 .car{
-
   padding-top: 30px
+}
+
+.quantite{
+  padding: 10px;
+  border: 2px solid;
+  margin-top: 20px
+  
 }
