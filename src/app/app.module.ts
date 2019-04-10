@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { PlatComponent } from './plat/plat.component';
 import { PlatCantinereComponent } from './plat-cantinere/plat-cantinere.component';
 import { MenuCantinereComponent } from './menu-cantinere/menu-cantinere.component';
+import { RecapCantiniereComponent } from './recap-cantiniere/recap-cantiniere.component';
 
 const appRoute: Routes = [
   {path: 'auth/inscription', component: IsncriptionComponent},
@@ -20,7 +21,8 @@ const appRoute: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'plat', component: PlatComponent},
   {path: 'platCantiniere', component: PlatCantinereComponent},
-  {path: 'menuCantiniere', component: MenuCantinereComponent}
+  {path: 'menuCantiniere', component: MenuCantinereComponent},
+  {path: 'recapCantiniere', component: RecapCantiniereComponent}
  
 ]
 @NgModule({
@@ -33,7 +35,8 @@ const appRoute: Routes = [
     HeaderComponent,
     PlatComponent,
     PlatCantinereComponent,
-    MenuCantinereComponent
+    MenuCantinereComponent,
+    RecapCantiniereComponent
   ],
   imports: [
     BrowserModule,

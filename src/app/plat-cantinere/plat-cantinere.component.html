@@ -1,68 +1,101 @@
-<nav class="navv">
-  <div class="btn">
-   <a class="lien" href="#">Récapitulatif des commandes</a>
-   <a class="lien" href="#">Plats</a>
-   <a class="lien" href="#">Menu</a>
-   <a class="lien" href="#">Compte utilisateur</a> 
-  </div>
-  <div class="add">
-   <form class="form-inline">
+
+   <div class="container">
+      <ul id="tabsNav" class="tabsNav nav">
+       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
+         rel="tabLundi" (click)="viewMode ='tabLundi'">Récapitulatif des commandes</li>
+       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabMardi'"
+         rel="tabMardi" (click)="viewMode ='tabMardi'">Plats</li>
+       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabMercredi'"
+         rel="tabMercredi" (click)="viewMode ='tabMercredi'">Menu</li>
+       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabJeudi'"
+         rel="tabJeudi" (click)="viewMode ='tabJeudi'">Compte utilisateur</li>
+     </ul>
     
-     <div class="form-group mx-sm-3 mb-2">
-       <label for="inputPassword2" class="sr-only">Password</label>
-       <input type="text" class="form-control" id="" placeholder="Plat">
+     <form class="row form">
+         <div class="col-12 col-xl-6">
+           <label for="inputPassword2" class="sr-only">Password</label>
+           <input type="text" class="form-control" id="" placeholder="Plat">
+         </div>
+         <div class="col-12 col-xl-6 text-center">
+         <button type="submit" class="btn btn-primary mb-2 valider">Ajouter</button>
+       </div>
+       </form>
      </div>
-     <button type="submit" class="btn btn-primary mb-2 valider">Ajouter</button>
-   </form>
-  </div>
-  
-     <div class="days">
-       <a class="lien" href="#">Lundi</a>
-       <a class="lien" href="#">Mardi</a>
-       <a class="lien" href="#">Mercredi</a>
-       <a class="lien" href="#">Jeudi</a>
-       <a class="lien" href="#">Vendredi</a>
+      <div class="container-fluid">
+       <div class="row tab plat">
+         <div class="col">
+           <div class="days">
+             <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
+             rel="tabLundi" (click)="viewMode ='tabLundi'">Lundi</li>
+           </div>
+           <div class="selMenu">
+             <select class="sel">
+               <option value="">Plat 1</option>
+             </select>
+             <select class="sel">
+               <option value="">Plat 2</option>
+             </select>
+           </div>
+         </div>
+         <div class="col">
+           <div class="days">
+               <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
+               rel="tabLundi" (click)="viewMode ='tabLundi'">Mardi</li>
+           </div>
+           <div class="selMenu">
+               <select class="sel">
+                 <option value="">Plat 1</option>
+               </select>
+               <select class="sel">
+                 <option value="">Plat 2</option>
+               </select>
+             </div>
+         </div>
+         <div class="col">
+             <div class="days">
+                 <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
+                 rel="tabLundi" (click)="viewMode ='tabLundi'">Mercredi</li>
+             </div>
+             <div class="selMenu">
+                 <select class="sel">
+                   <option value="">Plat 1</option>
+                 </select>
+                 <select class="sel">
+                   <option value="">Plat 2</option>
+                 </select>
+               </div>
+         </div>
+         <div class="col">
+             <div class="days">
+                 <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
+                 rel="tabLundi" (click)="viewMode ='tabLundi'">Jeudi</li>
+             </div>
+             <div class="selMenu">
+             <select class="sel">
+               <option value="">Plat 1</option>
+             </select>
+             <select class="sel">
+               <option value="">Plat 2</option>
+             </select>
+           </div>
+         </div>
+         <div class="col">
+           <div class="days">
+               <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
+               rel="tabLundi" (click)="viewMode ='tabLundi'">Vendredi</li>
+           </div>
+           <div class="selMenu">
+           <select class="sel">
+               <option value="">Plat 1</option>
+           </select>
+           <select class="sel">
+               <option value="">Plat 2</option>
+           </select>
+         </div>
+         </div>
+       </div>
+      </div>
+   
+     <div class="valid">
+      <button class="btn btn-primary valider">Valider</button>
      </div>
-   </nav>
-  <div class="plat">
-   <div class="days">
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1t</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-   </div>
-  </div>
-  <div class="plat">
-   <div class="days">
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1t</option>
-     </select>
-     <select class="sel">
-       <option>Plat 1</option>
-     </select>
-   </div>
-  </div>
- 
-  <div class="valid">
-   <button class="btn btn-primary valider">Valider</button>
-  </div>
