@@ -1,6 +1,5 @@
 .nav-item {
   cursor: pointer;
-  margin-right: 2%;
   font-size: 1.3em;
   font-weight: 600;
   text-align: center;
@@ -10,54 +9,37 @@
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  max-width: 100%;
+  /*max-width: 100%;*/
   margin-bottom: 37px;
   /* background-color: #e2e2e2; */
   /* border-radius: 10px; */
   display: inline-block;
   padding: 45px;
+  
 }
 
-li {
+a {
   text-align: center;
   display: inline-block;
 }
 
 .nav-link-custom {
   background-color: #dfdfdf;
-  color: rgb(104, 104, 104);
+  color: rgb(17, 14, 14);
   border-radius: 20px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
 }
 
 
-.nav-link-all {
-  background-color: #ffcdcd;
-  color: rgb(104, 104, 104);
-  border-radius: 20px;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
 
-.nav-link-all.active {
-  filter: drop-shadow(5px 5px 10px rgb(194, 194, 194));
-  background-color: #3a3a3a;
-  color: rgb(235, 235, 235);
-  font-weight: 600;
-}
 
 .nav-link:hover {
   filter: drop-shadow(2px 2px 7px rgb(194, 194, 194));
+  background-color: #cb2a3f;
+  color: white
 }
 
-.nav-link-custom.active {
-  filter: drop-shadow(5px 5px 10px rgb(194, 194, 194));
-  background-color: #3a3a3a;
-  color: rgb(235, 235, 235);
-  font-weight: 600;
-}
 
 
 .tab-pane {
@@ -75,12 +57,23 @@ li {
 }
 
 .car{
-  padding-top: 30px
+  padding-top: 30px;
+  margin-left: 20px;
 }
 
 .quantite{
   padding: 10px;
   border: 2px solid;
-  margin-top: 20px
-  
+  margin-top: 20px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+span{
+  color: black;
+  font-weight: bolder;
+  font-size: 25px
+}
+
+.card{
+  background-image: url(https://images.pexels.com/photos/459469/pexels-photo-459469.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
 }

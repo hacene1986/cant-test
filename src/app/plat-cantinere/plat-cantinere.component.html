@@ -1,16 +1,13 @@
 
    <div class="container">
-      <ul id="tabsNav" class="tabsNav nav">
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-         rel="tabLundi" (click)="viewMode ='tabLundi'">Récapitulatif des commandes</li>
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabMardi'"
-         rel="tabMardi" (click)="viewMode ='tabMardi'">Plats</li>
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabMercredi'"
-         rel="tabMercredi" (click)="viewMode ='tabMercredi'">Menu</li>
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabJeudi'"
-         rel="tabJeudi" (click)="viewMode ='tabJeudi'">Compte utilisateur</li>
-     </ul>
-    
+     <div class="row">
+        <ul id="tabsNav" class="tabsNav nav">
+            <a routerLink="/recapCantiniere" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">Récapitulatif</a>
+            <a routerLink="/platCantiniere" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">Plats</a>
+            <a routerLink="/menuCantiniere" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">Menu</a>
+            <a routerLink="/utilisateur" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">utilisateur</a>
+          </ul>
+    </div>
      <form class="row form">
          <div class="col-12 col-xl-6">
            <label for="inputPassword2" class="sr-only">Password</label>
@@ -25,8 +22,7 @@
        <div class="row tab plat">
          <div class="col">
            <div class="days">
-             <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-             rel="tabLundi" (click)="viewMode ='tabLundi'">Lundi</li>
+             <li class="nav-item nav-link nav-link-custom small text-uppercase ">Lundi</li>
            </div>
            <div class="selMenu">
              <select class="sel">
@@ -39,8 +35,7 @@
          </div>
          <div class="col">
            <div class="days">
-               <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-               rel="tabLundi" (click)="viewMode ='tabLundi'">Mardi</li>
+               <li class="nav-item nav-link nav-link-custom small text-uppercase ">Mardi</li>
            </div>
            <div class="selMenu">
                <select class="sel">
@@ -53,8 +48,7 @@
          </div>
          <div class="col">
              <div class="days">
-                 <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-                 rel="tabLundi" (click)="viewMode ='tabLundi'">Mercredi</li>
+                 <li class="nav-item nav-link nav-link-custom small text-uppercase ">Mercredi</li>
              </div>
              <div class="selMenu">
                  <select class="sel">
@@ -67,8 +61,7 @@
          </div>
          <div class="col">
              <div class="days">
-                 <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-                 rel="tabLundi" (click)="viewMode ='tabLundi'">Jeudi</li>
+                 <li class="nav-item nav-link nav-link-custom small text-uppercase ">Jeudi</li>
              </div>
              <div class="selMenu">
              <select class="sel">
@@ -81,8 +74,7 @@
          </div>
          <div class="col">
            <div class="days">
-               <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-               rel="tabLundi" (click)="viewMode ='tabLundi'">Vendredi</li>
+               <li class="nav-item nav-link nav-link-custom small text-uppercase ">Vendredi</li>
            </div>
            <div class="selMenu">
            <select class="sel">

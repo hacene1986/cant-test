@@ -1,71 +1,46 @@
 
    <div class="container">
-      <ul id="tabsNav" class="tabsNav nav">
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-         rel="tabLundi" (click)="viewMode ='tabLundi'">Récapitulatif des commandes</li>
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabMardi'"
-         rel="tabMardi" (click)="viewMode ='tabMardi'">Plats</li>
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabMercredi'"
-         rel="tabMercredi" (click)="viewMode ='tabMercredi'">Menu</li>
-       <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabJeudi'"
-         rel="tabJeudi" (click)="viewMode ='tabJeudi'">Compte utilisateur</li>
-     </ul>
+      <div class="row">
+          <ul id="tabsNav" class="tabsNav nav">
+           <a routerLink="/recapCantiniere" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">Récapitulatif</a>
+           <a routerLink="/platCantiniere" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">Plats</a>
+           <a routerLink="/menuCantiniere" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">Menu</a>
+           <a routerLink="/utilisateur" class="nav-item nav-link nav-link-custom small text-uppercase col-12 col-xl-3 mb-2">utilisateur</a>
+         </ul>
+        </div>
     
      </div>
       <div class="container-fluid">
        <div class="row tab plat">
-         <div class="col">
+         <div class="col mb-2">
            <div class="days">
-             <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-             rel="tabLundi" (click)="viewMode ='tabLundi'">Lundi</li>
+             <li class="nav-item nav-link nav-link-custom small text-uppercase ">Lundi</li>
            </div>
          </div>
-         <div class="col">
+         <div class="col mb-2">
            <div class="days">
-               <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-               rel="tabLundi" (click)="viewMode ='tabLundi'">Mardi</li>
+               <li class="nav-item nav-link nav-link-custom small text-uppercase ">Mardi</li>
            </div>
          </div>
-         <div class="col">
+         <div class="col mb-2">
              <div class="days">
-                 <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-                 rel="tabLundi" (click)="viewMode ='tabLundi'">Mercredi</li>
+                 <li class="nav-item nav-link nav-link-custom small text-uppercase ">Mercredi</li>
              </div>
          </div>
-         <div class="col">
+         <div class="col mb-2">
              <div class="days">
-                 <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-                 rel="tabLundi" (click)="viewMode ='tabLundi'">Jeudi</li>
+                 <li class="nav-item nav-link nav-link-custom small text-uppercase ">Jeudi</li>
              </div>
          </div>
-         <div class="col">
+         <div class="col mb-2">
            <div class="days">
-               <li class="nav-item nav-link nav-link-custom small text-uppercase active" [class.active]="viewMode == 'tabLundi'"
-               rel="tabLundi" (click)="viewMode ='tabLundi'">Vendredi</li>
+               <li class="nav-item nav-link nav-link-custom small text-uppercase ">Vendredi</li>
            </div>
          </div>
        </div>
 
        <div class="row car">
-        <div class="col text-center">
-            <div class="card w-100" style="width: 18rem;">
-                <h1 class="text-center">Kevin</h1>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Spaguetti</li>
-                  <li class="list-group-item">Soupe</li>
-                  <li class="list-group-item">Poisson</li>
-                </ul>
-                <div class="row text-center">
-                <div class="col-12 col-xl-6 card-body">
-                    <input type="checkbox"><span>Emporter</span>
-                </div>
-                <div class="col-12 col-xl-6 card-body">
-                    <button class="btn btn-danger">X</button>
-                </div>
-              </div>
-              </div>
-        </div>
-        <div class="col">
+        <div class="col mb-5 text-center">
             <div class="card" style="width: 18rem;">
                 <h1 class="text-center">Kevin</h1>
                 <ul class="list-group list-group-flush">
@@ -75,16 +50,15 @@
                 </ul>
                 <div class="row text-center">
                 <div class="col-12 col-xl-6 card-body">
-                    <input type="checkbox"><span>Emporter</span>
+                    <input class="w-100" type="checkbox"><span>Emporter</span>
                 </div>
                 <div class="col-12 col-xl-6 card-body">
                     <button class="btn btn-danger">X</button>
                 </div>
               </div>
               </div>
-
         </div>
-        <div class="col">
+        <div class="col mb-5">
             <div class="card" style="width: 18rem;">
                 <h1 class="text-center">Kevin</h1>
                 <ul class="list-group list-group-flush">
@@ -94,7 +68,7 @@
                 </ul>
                 <div class="row text-center">
                 <div class="col-12 col-xl-6 card-body">
-                    <input type="checkbox"><span>Emporter</span>
+                    <input class="w-100" type="checkbox"><span>Emporter</span>
                 </div>
                 <div class="col-12 col-xl-6 card-body">
                     <button class="btn btn-danger">X</button>
@@ -103,7 +77,7 @@
               </div>
 
         </div>
-        <div class="col">
+        <div class="col mb-5">
             <div class="card" style="width: 18rem;">
                 <h1 class="text-center">Kevin</h1>
                 <ul class="list-group list-group-flush">
@@ -113,7 +87,26 @@
                 </ul>
                 <div class="row text-center">
                 <div class="col-12 col-xl-6 card-body">
-                    <input type="checkbox"><span>Emporter</span>
+                    <input class="w-100" type="checkbox"><span>Emporter</span>
+                </div>
+                <div class="col-12 col-xl-6 card-body">
+                    <button class="btn btn-danger">X</button>
+                </div>
+              </div>
+              </div>
+
+        </div>
+        <div class="col mb-5">
+            <div class="card" style="width: 18rem;">
+                <h1 class="text-center">Kevin</h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Spaguetti</li>
+                  <li class="list-group-item">Soupe</li>
+                  <li class="list-group-item">Poisson</li>
+                </ul>
+                <div class="row text-center">
+                <div class="col-12 col-xl-6 card-body">
+                    <input class="w-100" type="checkbox"><span>Emporter</span>
                 </div>
                 <div class="col-12 col-xl-6 card-body">
                     <button class="btn btn-danger">X</button>
@@ -121,7 +114,7 @@
               </div>
               </div>
         </div>
-        <div class="col">
+        <div class="col mb-5">
             <div class="card" style="width: 18rem;">
                 <h1 class="text-center">Kevin</h1>
                 <ul class="list-group list-group-flush">
@@ -131,7 +124,7 @@
                 </ul>
                 <div class="row text-center">
                 <div class="col-12 col-xl-6 card-body">
-                    <input type="checkbox"><span>Emporter</span>
+                    <input class="w-100" type="checkbox"><span>Emporter</span>
                 </div>
                 <div class="col-12 col-xl-6 card-body">
                     <button class="btn btn-danger">X</button>
@@ -143,13 +136,13 @@
 
        <div class="container quantite">
          <div class="row">
-          <div class="col-12 col-xl-4">
+          <div class="col-12 col-xl-4 text-center">
             <h2>Quantité du jour: <span>15</span></h2>
           </div>
-          <div class="col-12 col-xl-4">
+          <div class="col-12 col-xl-4 text-center">
               <h2>Menu/Plat 1: <span>10</span></h2>
           </div>
-          <div class="col-12 col-xl-4">
+          <div class="col-12 col-xl-4 text-center">
               <h2>Menu/Plat 2: <span>10</span></h2>
           </div>
        </div>

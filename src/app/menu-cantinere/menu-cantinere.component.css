@@ -1,9 +1,17 @@
- .sel{
-    font-size: 2em;
-    color: black;
-    padding: 5px 50px 5px 50px;
-    border: 2px solid;  
- }
+.sel{
+  font-size: 21px;
+  color: white;
+  font-weight: bolder;
+  padding: 5px 50px 5px 50px;
+  border: 4px solid;  
+  border-radius: 20px 0;
+  background-image: url(https://wallpapers-house.com/data/out/10/wallpaper2you_373647.jpg)
+}
+
+.sel:hover{
+  border-color: rgba(211, 40, 63, 1);
+}
+
  .form-inline{
     text-align: center;
    
@@ -24,7 +32,7 @@
 
 .nav-item {
     cursor: pointer;
-    margin-right: 2%;
+   /* margin-right: 2%;*/
     font-size: 1.3em;
     font-weight: 600;
     text-align: center;
@@ -34,46 +42,31 @@
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 100%;
+  /*  max-width: 100%;*/
     margin-bottom: 37px;
-    /* background-color: #e2e2e2; */
-    /* border-radius: 10px; */
     display: inline-block;
     padding: 45px;
   }
 
-  li {
+  a {
     text-align: center;
     display: inline-block;
   }
 
   .nav-link-custom {
     background-color: #dfdfdf;
-    color: rgb(104, 104, 104);
+    color: rgb(17, 14, 14);
     border-radius: 20px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
 
   
-  .nav-link-all {
-    background-color: #ffcdcd;
-    color: rgb(104, 104, 104);
-    border-radius: 20px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-  }
-
-  .nav-link-all.active {
-    filter: drop-shadow(5px 5px 10px rgb(194, 194, 194));
-    background-color: #3a3a3a;
-    color: rgb(235, 235, 235);
-    font-weight: 600;
-  }
 
   .nav-link:hover {
     filter: drop-shadow(2px 2px 7px rgb(194, 194, 194));
+    background-color: #cb2a3f;
+    color: white
   }
 
   .nav-link-custom.active {
@@ -89,10 +82,6 @@
     text-align: center;
   }
   
-  .tab-pane.active {
-    animation: appear .8s ease-in-out;
-    /* animation: scale-up-center 0.4s ease-in-out; */
-  }
 
   .tab{
       text-align: center
