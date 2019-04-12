@@ -1,13 +1,14 @@
 
 
 .sel{
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bolder;
-  color: white;
+  color: rgb(216, 211, 211);
   padding: 5px 50px 5px 50px;
   border: 3px solid;  
   border-radius: 20px 0;
- /* background-color: #c0c3c3a6;*/
+  text-align: center;
+  text-align-last: center;
   background-image: url(https://wallpapers-house.com/data/out/10/wallpaper2you_373647.jpg)
 }
 

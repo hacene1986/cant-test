@@ -18,6 +18,8 @@
     </div>
     </form>
   </div>
+
+
    <div class="container-fluid">
     <div class="row tab plat">
       <div class="col">
@@ -26,10 +28,10 @@
         </div>
         <div class="selMenu">
           <select class="sel">
-            <option value="">Menu 1</option>
+            <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
           </select>
           <select class="sel">
-            <option value="">Menu 2</option>
+            <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
           </select>
         </div>
       </div>
@@ -39,10 +41,10 @@
         </div>
         <div class="selMenu">
             <select class="sel">
-              <option value="">Menu 1</option>
+              <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
             </select>
             <select class="sel">
-              <option value="">Menu 2</option>
+              <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
             </select>
           </div>
       </div>
@@ -52,10 +54,10 @@
           </div>
           <div class="selMenu">
               <select class="sel">
-                <option value="">Menu 1</option>
+                <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
               </select>
               <select class="sel">
-                <option value="">Menu 2</option>
+                <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
               </select>
             </div>
       </div>
@@ -65,10 +67,10 @@
           </div>
           <div class="selMenu">
           <select class="sel">
-            <option value="">Menu 1</option>
+            <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
           </select>
           <select class="sel">
-            <option value="">Menu 2</option>
+            <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
           </select>
         </div>
       </div>
@@ -78,10 +80,10 @@
         </div>
         <div class="selMenu">
         <select class="sel">
-            <option value="">Menu 1</option>
+            <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
         </select>
         <select class="sel">
-            <option value="">Menu 2</option>
+            <option value="" *ngFor="let menu of listMenuThisWeek">{{menu.label}}</option>
         </select>
       </div>
       </div>

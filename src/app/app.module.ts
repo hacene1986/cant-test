@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IsncriptionComponent } from './auth/isncription/isncription.component';
@@ -41,7 +42,9 @@ const appRoute: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoute)
+    RouterModule.forRoot(appRoute),
+    HttpClientModule 
+
   ],
   providers: [],
   bootstrap: [AppComponent]
